@@ -1,0 +1,321 @@
+:root{
+    --bg1: linear-gradient(0deg,#F4F4F5,#C7DBFC);
+    --bg2: linear-gradient(0deg,#C7DBFC,#F4F4F5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #C7DBFC;
+}
+
+/* Halaman Pertama */
+.page1{
+    min-height: 100vh;
+    background: var(--bg1);
+    display: flex;
+    align-items: center;
+}
+
+.page1 .intro{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro h1{
+    font-weight: 800;
+    font-size: 44px;
+}
+
+.intro span{
+    color: #2D56B3;
+}
+
+/* Tombol Mulai Sekarang */
+.intro a{
+    width: 275px;
+    text-decoration: none;
+}
+
+.intro .btn-mulai{
+    display: flex;
+    margin-top: 1rem;
+    background-color: #2D56B3;
+    border-radius: 20px;
+    min-height: 84px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-mulai p{
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+}
+
+/* Gambar Halaman Pertama */
+.intro-img img{
+    min-width: 710px;
+}
+
+/* Halaman Kedua */
+.page2{
+    background: var(--bg2);
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+/* Search */
+.search-form{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+    margin-bottom: 1.5rem;
+    background: #FAFAFB;
+    height: 45px;
+    border-radius: 15px;
+}
+
+.search-text{
+    width: 100%;
+    border: none;
+    padding-left: 1rem;
+    background: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+
+.search-form button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.search-form img{
+    height: 24px;
+}
+
+/* Menambahkan Buku dan Menampilkan Buku */
+.content-form{
+    display: flex;
+    margin: 0 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Menambahkan Buku */
+.container-add{
+    flex: 2;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    background: #DCDFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-top: 0.8rem;
+}
+
+.container-add p{
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 3rem;
+}
+
+.container-header{
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 2.3rem;
+}
+
+.form-group input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding-left: 0.5rem;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+  
+.form-placeholder {
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.input-inline{
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.input-inline label{
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+
+.btn-submit{
+    width: 100%;
+    height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background: #2D56B3;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+/* Kontainer To do List */
+.task{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 2rem 0 25rem;
+}
+
+.container{
+    margin: 1rem;
+    padding: 0 1rem;
+    border: 2px dashed black;
+    border-radius: 25px;
+    min-height: 12rem;
+}
+
+/* To do List */
+.book-collect{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.list-item{
+    background: #FBFAFA;
+    border-radius: 15px;
+    padding: 0.5rem;
+    max-width: 15rem;
+    margin: 0 0.5rem 1rem 0;
+}
+
+.book-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.list-item p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.btn-action{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 0.5rem;
+}
+
+.btn-action img{
+    width: 20px;
+}
+
+.unfinish,
+.finish{
+    font-weight: bold;
+    padding: 0 0.5rem;
+    background: #FBFAFA;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.unfinish{
+    border: 1px solid #FFEA00;
+    color: #FFEA00;
+}
+
+.finish{
+    border: 1px solid #0FA958;
+    color: #0FA958;
+}
+
+.btn-edit,
+.btn-clear{
+    border-radius: 7px;
+    padding: 0.2rem;
+    background: #FBFAFA;
+    cursor: pointer;
+}
+
+.btn-edit{
+    border: 1px solid #407BFF;
+}
+
+.btn-clear{
+    border: 1px solid #EE0E0E;
+}
+
+/* Hover */
+.unfinish:hover{
+    color: #F4F4F5;
+    background: #FFEA00;
+}
+
+.finish:hover{
+    color: #F4F4F5;
+    background: #0FA958;
+}
+
+.btn-edit:hover{
+    background: #407BFF;
+}
+
+.btn-edit:hover img {
+    content: url('/asset/edit_hover.png');
+}
+
+.btn-clear:hover{
+    background: #EE1212;
+}
+
+.btn-clear:hover img {
+    content: url('/asset/delete_hover.png');
+}
+
+
+/* Footer */
+footer {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #2D56B3;
+    text-align: center;
+}
+
+footer a{
+    color: #000000;
+}
+
+footer a:hover{
+    color: #FBFAFA;
+}
